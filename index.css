@@ -1,0 +1,37 @@
+body {
+    text-align: center;
+    margin: 0;
+    color: aliceblue;
+}
+input {
+    border-radius: 11px;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    font-size: 44px;
+    background-color: #6943FF;
+    }
+.input {
+    text-align: center;
+    background-color: #6943FF;
+    margin: 0;
+}
+button {
+    margin: 24px
+}
+.output-item {
+    margin: 8px;
+    padding: 8px;
+    background-color: #273549;
+}
+.outbox {
+    color: lightblue;
+    font-weight: bold;
+}
+
+.outlittle {
+    margin: 4px;
+    padding: 4px;
+    background-color: #273549;
+    color: white
+}
