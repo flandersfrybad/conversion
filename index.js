@@ -2,6 +2,12 @@ document.addEventListener("DOMContentLoaded", function() {
     renderOutput();
 })
 
+const metersToFeetConversion = 3.281
+const feetToMetersConversion = 0.305
+const litersToGallonsConversion = 0.264
+const gallonsToLitersConversion = 3.785
+const kilosToPoundsConversion = 2.204
+const poundsToKilosConversion = 0.454
 const inputElement = document.getElementById("input-el")
 const convertButton = document.getElementById("convert-btn")
 
@@ -12,9 +18,9 @@ convertButton.addEventListener("click", function() {
 function renderOutput() {
     const inputValue = parseFloat(inputElement.value)
     const units = [
-        ["Length (Meter/Feet)", "feet", "meters", 3.281, 0.305], 
-        ["Volume (Liters/Gallons)", "gallons", "liters", 0.264, 3.785], 
-        ["Mass (Kilograms/Pounds)", "pounds", "kilos", 2.204, 0.454]
+        ["Length (Meter/Feet)", "feet", "meters", metersToFeetConversion, feetToMetersConversion], 
+        ["Volume (Liters/Gallons)", "gallons", "liters", litersToGallonsConversion, gallonsToLitersConversion], 
+        ["Mass (Kilograms/Pounds)", "pounds", "kilos", kilosToPoundsConversion, poundsToKilosConversion]
     ]
     let outputString = ""
     for (let i = 0; i < units.length; i++) {
